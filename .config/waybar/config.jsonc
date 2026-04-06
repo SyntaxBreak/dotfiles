@@ -1,0 +1,99 @@
+{
+    "height": 30,
+    "spacing": 4,
+    "modules-left": [
+        "clock",
+        "hyprland/window",
+        "mpris"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "backlight",
+        "wireplumber",
+        "cpu",
+        "memory",
+        "battery",
+        "power-profiles-daemon"
+    ],
+    "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "memory": {
+        "interval": 15,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "cpu": {
+        "interval": 15,
+        "format": " {}%",
+        "max-length": 10
+    },
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-muted": "{icon} Muted",
+        "on-click": "kitty -e wiremix",
+        "format-icons": [
+            "",
+            "",
+            ""
+        ]
+    },
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "power-saver": "",
+            "balanced": "",
+            "performance": ""
+        }
+    },
+    "network": {
+        "format-wifi": " {essid} ({signalStrength}%)",
+        "format-ethernet": "󰊗 {ipaddr}/{cidr}",
+        "tooltip-format": "󰊗 {ifname} via {gwaddr}",
+        "format-linked": "󰊗 {ifname} (No IP)",
+        "format-disconnected": "⚠ Disconnected",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "on-click": "kitty -e impala"
+    },
+    "mpris": {
+        "format": "{status_icon} {artist}: {title} [{position}/{length}]",
+        "interval": 1,
+        "status-icons": {
+            "playing": "▶",
+            "paused": "⏸"
+        }
+    }
+}
