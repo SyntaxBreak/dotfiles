@@ -3,6 +3,26 @@ window#waybar {
     font-weight: 500;
     font-size: 16px;
 
-    min-height: 40px;
-    margin: 200px 50px;
+    background: transparent;
+}
+
+.modules-left {
+    margin-left: 3px;
+}
+
+.modules-right {
+    margin-right: 3px;
+
+}
+
+.module {
+    margin: 7px 5px 4px;
+    padding: 1px 5px;
+    background: #8a2628;
+    color: black;
+    border-radius: 5px;
+}
+
+#power-profiles-daemon {
+    padding-right: 8px;
 }

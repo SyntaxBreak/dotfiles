@@ -22,6 +22,14 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
+    "hyprland/window": {
+        "max-length": 48,
+        "rewrite": {
+            "Mozilla Firefox": "Firefox",
+            "(.*) — Mozilla Firefox": "$1 - Firefox",
+            "(.*) - Visual Studio Code": "$1 - VS Code"
+        }
+    },
     "backlight": {
         "format": "{icon} {percent}%",
         "format-icons": [
@@ -89,8 +97,9 @@
         "on-click": "kitty -e impala"
     },
     "mpris": {
-        "format": "{status_icon} {artist}: {title} [{position}/{length}]",
+        "format": "{status_icon} {dynamic}",
         "interval": 1,
+        "dynamic-order": "{artist}: {title} {position}{length}",
         "status-icons": {
             "playing": "▶",
             "paused": "⏸"
