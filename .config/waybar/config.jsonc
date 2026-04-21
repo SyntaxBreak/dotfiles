@@ -99,10 +99,11 @@
     "mpris": {
         "format": "{status_icon} {dynamic}",
         "interval": 1,
-        "dynamic-order": "{artist}: {title} {position}{length}",
+        "dynamic-order": ["artist", "title", "position", "length"],
         "status-icons": {
             "playing": "▶",
             "paused": "⏸"
-        }
+        },
+        "title-len": 20
     }
 }
