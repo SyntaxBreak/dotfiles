@@ -10,12 +10,13 @@
         "hyprland/workspaces"
     ],
     "modules-right": [
-        "backlight",
-        "wireplumber",
         "cpu",
         "memory",
+        "backlight",
+        "wireplumber",
         "battery",
-        "power-profiles-daemon"
+        "power-profiles-daemon",
+        "network"
     ],
     "clock": {
         // "timezone": "America/New_York",
