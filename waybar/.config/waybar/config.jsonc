@@ -10,9 +10,6 @@
         "hyprland/workspaces"
     ],
     "modules-right": [
-        "cpu",
-        "memory",
-        "backlight",
         "wireplumber",
         "battery",
         "power-profiles-daemon",
