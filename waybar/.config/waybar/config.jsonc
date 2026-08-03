@@ -23,8 +23,6 @@
     "hyprland/window": {
         "max-length": 48,
         "rewrite": {
-            "Mozilla Firefox": "Firefox",
-            "(.*) — Mozilla Firefox": "$1 - Firefox",
             "(.*) - Visual Studio Code": "$1 - VS Code"
         }
     },
