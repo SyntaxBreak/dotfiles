@@ -1,0 +1,75 @@
+{
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "hyprland/window": {
+        "max-length": 48
+    },
+    "hyprland/workspaces": {
+        "format": ""
+    },
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-charging": "󱐋&#xEAAE; {capacity}%",
+        "format-plugged": "&#xEAAE;󱐋 {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": [
+            "&#xEAB0;",
+            "&#xEAB2;",
+            "&#xEAAF;"
+        ]
+    },
+    "memory": {
+        "interval": 15,
+        "format": "&#xF454; {}%",
+        "max-length": 10
+    },
+    "cpu": {
+        "interval": 15,
+        "format": "&#xEBF0; {}%",
+        "max-length": 10
+    },
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "&#xEE05; {volume}%", // why does this not work
+        "format-muted": "&#xF29E; {volume}%",
+        "on-click": "kitty -e wiremix",
+        "format-icons": [
+            "&#xF29C;",
+            "&#xF2A2;"
+        ]
+    },
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "power-saver": "&#xEEA3;",
+            "balanced": "&#xF0B7;",
+            "performance": "&#xF2CC;"
+        }
+    },
+    "network": {
+        "format-wifi": "{icon} {essid}",
+        "format-ethernet": "󰊗 {ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-linked": "󰊗 {ifname} (No IP)",
+        "format-disconnected": "⚠ Disconnected",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "on-click": "kitty -e impala",
+        "format-icons": [
+            "&#xF134;", "&#xF12B;", "&#xF12D;", "&#xF133;"
+        ]
+    },
+    "mpris": {
+        "format": "{status_icon} {dynamic}",
+        "interval": 1,
+        "dynamic-order": ["artist", "title", "position", "length"],
+        "status-icons": {
+            "playing": "&#xF00B;",
+            "paused": "&#xEFD8;"
+        },
+        "title-len": 20
+    }
+}

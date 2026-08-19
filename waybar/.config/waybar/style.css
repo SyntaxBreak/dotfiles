@@ -1,24 +1,41 @@
-window#waybar {
-    font-family: "Satoshi Variable", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+* {
+    border: none; border-radius: 0;
+    font-family: Lexend, remixicon, Helvetica, sans-serif;
+    font-size: 1.2rem; font-weight: 400;
 
+    min-height: 0;
+    margin: 0; padding: 0;
+}
+
+window#waybar {
+    font-family: "Lexend";
     background: transparent;
 }
 
-.modules-left {
-    margin-left: 10px;
-}
-
-.modules-right {
-    margin-right: 10px;
-
-}
-
 .module {
-    margin: 7px 5px 4px;
-    padding: 1px 5px;
-    background: #4c4b50;
-    color: white;
-    border-radius: 5px;
+    background: #14151D;
+    padding: 0.55rem;
+    border-radius: 3px;
+    margin-left: 5px; margin-right: 5px;
+} 
+
+.modules-left widget:first-child {
+    margin-left: 0;
 }
+
+.modules-right widget:last-child {
+    margin-right: 0;
+}
+
+#workspaces button {
+    background: #262837; 
+    border-radius: 3px;
+    margin-left: 5px; margin-right: 5px;
+}
+
+#workspaces button.active {
+    background: #119db6;
+    min-width: 40px;
+}
+
+#clock {color: #d88d5a;}
