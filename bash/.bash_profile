@@ -17,7 +17,7 @@ export PATH="/home/syntax/.local/bin:$PATH"
 if shopt -q login_shell; then
     if [[ $(tty) == '/dev/tty1' || $(tty) == '/dev/tty2' ]]; then
         echo "=== TTY Autostart: Launching Hyprland via start-hyprland ==="
-        ~/.config/hypr/hyprland-tty.sh
+        ~/.config/hypr/Scripts/hyprland-tty.sh
         # start-hyprland handles crash recovery internally
         # If we get here, start-hyprland exited cleanly (user logged out)
     fi

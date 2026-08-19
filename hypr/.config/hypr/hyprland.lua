@@ -187,11 +187,11 @@ hl.gesture({
 })
 
 hl.gesture({
-    fingers = 3, direction = "right", action = function() hl.dsp.exec("playerctl previous") end
+    fingers = 3, direction = "right", action = function() hl.dsp.exec_cmd("playerctl previous") end
 })
 
 hl.gesture({
-    fingers = 3, direction = "left", action = function() hl.dsp.exec("playerctl next") end
+    fingers = 3, direction = "left", action = function() hl.dsp.exec_cmd("playerctl next") end
 })
 
 
