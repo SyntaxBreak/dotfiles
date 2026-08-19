@@ -1,21 +1,10 @@
 ------------------
----- MONITORS ----
-------------------
-
-hl.monitor({
-    output   = "",
-    mode     = "preferred",
-    position = "auto",
-    scale    = "auto"
-})
-
-
 -------------------
 ---- AUTOSTART ----
 -------------------
 
 hl.on("hyprland.start", function () 
-   hl.exec_cmd("hyprlock")
+   --hl.exec_cmd("hyprlock")
    hl.exec_cmd("systemctl --user start hyprpolkitagent")
    hl.exec_cmd("waybar & hyprpaper & dunst & udiskie")
  end)
@@ -34,6 +23,8 @@ hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
 
 hl.env("QT_QPA_PLATFORM_THEME", "qt6ct")
 hl.env("GTK_THEME", "tokyonight-darkmoon-gtk4")
+
+hl.env("HYPRMONCFG_MONITORS_CONF", "~/.config/hypr/")
 
 
 -----------------------
@@ -326,3 +317,6 @@ hl.window_rule({
     move  = "20 monitor_h-120",
     float = true,
 })
+
+-- Added by hyprmoncfg: its generated monitor rules load last, so nothing before this can override the applied layout.
+dofile(os.getenv("HOME") .. "/.config/hypr/hyprmoncfg-monitors.lua")
