@@ -4,7 +4,7 @@
 -------------------
 
 hl.on("hyprland.start", function () 
-   --hl.exec_cmd("hyprlock")
+   hl.exec_cmd("hyprlock")
    hl.exec_cmd("systemctl --user start hyprpolkitagent")
    hl.exec_cmd("waybar & hyprpaper & dunst & udiskie")
  end)
@@ -22,7 +22,7 @@ hl.env("LIBVA_DRIVER_NAME", "nvidia")
 hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
 
 hl.env("QT_QPA_PLATFORM_THEME", "qt6ct")
-hl.env("GTK_THEME", "tokyonight-darkmoon-gtk4")
+hl.env("GTK_THEME", "Tokyonight-Red-Dark")
 
 hl.env("HYPRMONCFG_MONITORS_CONF", "~/.config/hypr/")
 
@@ -212,6 +212,7 @@ hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("hyprpicker -a"))
 hl.bind("ALT + SPACE", hl.dsp.exec_cmd("rofi -show drun"))
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m region -z"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mainMod .. " + I", hl.dsp.exec_cmd("vscodium-electron"))
 
 -- Window Binds
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
