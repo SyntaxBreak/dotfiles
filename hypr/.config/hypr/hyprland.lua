@@ -10,6 +10,13 @@ hl.on("hyprland.start", function ()
  end)
 
 
+------------------
+---- MONITORS ----
+------------------
+
+pcall(require, "monitors")
+pcall(require, "workspaces")
+
 -------------------------------
 ---- ENVIRONMENT VARIABLES ----
 -------------------------------
@@ -318,6 +325,3 @@ hl.window_rule({
     move  = "20 monitor_h-120",
     float = true,
 })
-
--- Added by hyprmoncfg: its generated monitor rules load last, so nothing before this can override the applied layout.
-dofile(os.getenv("HOME") .. "/.config/hypr/hyprmoncfg-monitors.lua")
