@@ -31,7 +31,7 @@ hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
 hl.env("QT_QPA_PLATFORM_THEME", "qt6ct")
 hl.env("GTK_THEME", "Tokyonight-Red-Dark")
 
-hl.env("HYPRMONCFG_MONITORS_CONF", "~/.config/hypr/")
+hl.env("HYPRSHOT_DIR", "Pictures/Screenshots")
 
 
 -----------------------
@@ -217,7 +217,7 @@ hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("zen-browser"))
 hl.bind(mainMod .. " + SHIFT + O", hl.dsp.exec_cmd("zen-browser --private-window"))
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("hyprpicker -a"))
 hl.bind("ALT + SPACE", hl.dsp.exec_cmd("rofi -show drun"))
-hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m region -z"))
+hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m region -z"), { locked = true })
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + I", hl.dsp.exec_cmd("vscodium-electron"))
 

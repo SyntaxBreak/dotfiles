@@ -4,7 +4,7 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "hyprland/window": {
-        "max-length": 48
+        "expand": true
     },
     "hyprland/workspaces": {
         "format": ""
@@ -12,7 +12,7 @@
     "battery": {
         "format": "{icon} {capacity}%",
         "format-charging": "󱐋&#xEAAE; {capacity}%",
-        "format-plugged": "&#xEAAE;󱐋 {capacity}%",
+        "format-plugged": "&#xEAAE; {capacity}%",
         "format-alt": "{time} {icon}",
         "format-icons": [
             "&#xEAB0;",
