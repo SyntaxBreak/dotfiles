@@ -18,7 +18,7 @@ window#waybar.empty #window {
 }
 
 .module {
-    background: #14151D;
+    background: #14151D; color: #FFFFFF;
     padding: 0.55rem;
     border-radius: 3px;
     margin-left: 5px; margin-right: 5px;
